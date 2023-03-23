@@ -1,0 +1,43 @@
+body{
+    background-color:black;
+    position: relative;
+   
+}
+.register{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    position: absolute;
+    height: 550px;
+    width: 50%;
+    position: relative;
+    left: 26%;
+
+
+
+    
+}
+.register button{
+    color: aliceblue;
+    background:transparent;
+    font-size: 40px;
+    border-radius: 100px;
+    border:2px solid white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.register button:hover{
+    background:rgb(197, 169, 117);
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:rgb(255, 165, 0);
+    align-items: center;
+    height: 50px;
+   
+}
+nav .image{
+    position:absolute;
+    left:3%;
+}

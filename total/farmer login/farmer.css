@@ -1,0 +1,75 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    transition: background 0.5s ease;
+    position: relative;
+    height: 100vh;
+}
+
+.user,
+.email,
+.password{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    height: 50px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10%;
+    transition: 0.5s ease-in-out;
+}
+.user input,
+.email input,
+.password input{
+    width: 75%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+.user i,
+.email i,
+.password i
+{
+    padding: 10px;
+    cursor: pointer;
+    
+}
+div.fade{
+    opacity: 0;
+    pointer-events: none;
+}
+div.in{
+    opacity: 1;
+    pointer-events: all;
+}
+@keyframes shake{
+    0%{
+        transform: translate(-50%, -50%)rotate(0deg);
+    }
+    50%{
+        transform: translate(-50%,- 50%)rotate(10deg);
+    }
+    100%{
+        transform: translate(-50%, -50%)rotate(0deg);
+    }
+}
+nav{
+    display: flex;
+    background-color: orangered;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+}
+nav .image
+{
+    position: absolute;
+    left: 3%;
+}
